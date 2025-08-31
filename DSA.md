@@ -33,9 +33,9 @@ Access the curated list here:
 
 ## 15 DSA Patterns
 
-![DSA Patterns](https://github.com/virendragit/SwiftUI-PracticeKit/blob/main/HelloSwiftUI/15_1.png)
-![DSA Patterns](https://github.com/virendragit/SwiftUI-PracticeKit/blob/main/HelloSwiftUI/15_2.png)
-![DSA Patterns](https://github.com/virendragit/SwiftUI-PracticeKit/blob/main/HelloSwiftUI/15_3.png)
+![DSA Patterns](https://github.com/virendragit/SwiftUI-PracticeKit/blob/main/HelloSwiftUI/15_1.jpg)
+![DSA Patterns](https://github.com/virendragit/SwiftUI-PracticeKit/blob/main/HelloSwiftUI/15_2.jpg)
+![DSA Patterns](https://github.com/virendragit/SwiftUI-PracticeKit/blob/main/HelloSwiftUI/15_3.jpg)
 
 
 ---

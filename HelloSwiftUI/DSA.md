@@ -11,6 +11,13 @@ Access the curated list here:
 
 ![DSA Patterns](https://github.com/virendragit/SwiftUI-PracticeKit/blob/main/HelloSwiftUI/1_pattern.png)
 
+![DSA Patterns](https://github.com/virendragit/SwiftUI-PracticeKit/blob/main/HelloSwiftUI/2_pattern.png)
+![DSA Patterns](https://github.com/virendragit/SwiftUI-PracticeKit/blob/main/HelloSwiftUI/3_pattern.png)
+![DSA Patterns](https://github.com/virendragit/SwiftUI-PracticeKit/blob/main/HelloSwiftUI/4_pattern.png)
+![DSA Patterns](https://github.com/virendragit/SwiftUI-PracticeKit/blob/main/HelloSwiftUI/5_pattern.png)
+![DSA Patterns](https://github.com/virendragit/SwiftUI-PracticeKit/blob/main/HelloSwiftUI/6_pattern.png)
+
+
 ---
 
 Feel free to use these resources for your interview preparation!

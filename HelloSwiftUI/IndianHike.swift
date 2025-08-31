@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct IndianHike: Identifiable,Hashable{
+    var id = UUID()
+    let name : String
+    let photo : String
+    let kilometer : Double
+    
+    
+}

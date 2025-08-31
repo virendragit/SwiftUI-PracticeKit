@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct HikeDetailsView: View {
+    let hike : Hike
+    @State private var zoomed : Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Image(hike.photo)
+                .resizable()
+                .aspectRatio(contentMode: zoomed ? .fill : .fit)
+                .onTapGesture {
+                    withAnimation{
+                        zoomed.toggle()
+                    }
+                }
+            Text(hike.name)
+                .font(.title)
+            Text("Distance:\(hike.miles)")
+            Spacer()
+        }.navigationTitle(hike.name)
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    HikeDetailsView()
+    NavigationStack{
+        HikeDetailsView(hike: Hike(name:"Salmoberry Trails",photo: "sal",miles: 6))
+    }
+    
 }

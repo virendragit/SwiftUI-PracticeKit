@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct ListandUI: View {
+    
+    @State private var name = ""
+    @State private var friends: [String] = []
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      VStack {
+            TextField("Enter your name", text: $name)
+              .textFieldStyle(.roundedBorder)
+              .onSubmit {
+                  friends.append(name)
+                  name = ""
+              }
+              Spacer()
+            List(friends, id: \.self) { friend in
+              Text(friend)
+          }
+        }
     }
 }
 

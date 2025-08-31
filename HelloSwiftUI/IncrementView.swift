@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct IncrementView: View {
+    
+    @State private var isOn: Bool = true
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Toggle(isOn: $isOn, label:{
+                Text(isOn ? "ON" : "OFF")
+                    .foregroundStyle(.white)
+            }).fixedSize()
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(isOn ? .yellow : .black)
     }
 }
 

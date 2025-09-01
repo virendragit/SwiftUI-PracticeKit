@@ -32,7 +32,7 @@ struct SearchableSwiftUIView: View {
             }
             Spacer()
         }.padding()
-            .onAppear(perform: {
+         .onAppear(perform: {
                 filteredFriends = friends
             })
          .navigationTitle("Friends")

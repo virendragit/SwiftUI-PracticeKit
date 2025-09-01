@@ -8,14 +8,20 @@
 import SwiftUI
 import Observation
 
-
-//Pre iOS 17
+@Observable
 class AppState: ObservableObject {
-    @Published var isOn: Bool = false
+     var isOn: Bool = false
 }
 
+
+
+//Pre iOS 17
+//class AppState: ObservableObject {
+//    @Published var isOn: Bool = false
+//}
+
 struct MultipleViews: View {
-    @EnvironmentObject private var appState: AppState
+    @Environment(AppState.self) private var appState: AppState
     @State var isOn = false
     var body: some View {
 //        LightBulbView2(isOn: $isOn)
@@ -34,7 +40,8 @@ struct LightBulbRoomView: View {
 
 struct LightBulbView2: View {
     
-    @EnvironmentObject var appState: AppState
+//    @EnvironmentObject var appState: AppState
+    @Environment(AppState.self) private var appState: AppState
     
     var body: some View {
         Image(systemName: appState.isOn ? "lightbulb.fill" : "lightbulb")
@@ -48,5 +55,5 @@ struct LightBulbView2: View {
 
 #Preview {
     MultipleViews()
-        .environmentObject(AppState())
+        .environment(AppState())
 }

@@ -11,7 +11,20 @@ import SwiftUI
 struct HelloSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(AppState())
         }
     }
 }
+
+
+//Other way:
+//struct HelloSwiftUIApp: App {
+//    
+//    @StateObject private var appState = AppState()
+//    
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView().environmentObject(appState)
+//        }
+//    }
+//}

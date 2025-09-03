@@ -12,3 +12,7 @@ struct Location  : Decodable{
     let lat: Double
     let lon: Double
 }
+
+struct Main  : Decodable{
+ 
+}

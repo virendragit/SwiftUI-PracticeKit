@@ -21,4 +21,10 @@ enum APIEndpoint {
             return "onecall?lat=\(lat)&lon=\(lon)&units=metric&appid=\(Constants.Keys.apiKey)"
         }
     }
+    
+    static func endpointURL(for endpoint: APIEndpoint) -> URL {
+        let endpointPath = endpoint.path
+        return URL(string: baseURLString + endpointPath)!
+        
+    }
 }

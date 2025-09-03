@@ -16,9 +16,9 @@ enum APIEndpoint {
     private var path: String {
         switch self {
         case .coordinatesByLocation(let location):
-            return "weather?q=\(location)&units=metric&appid=\(Constants.apiKey)"
+            return "weather?q=\(location)&units=metric&appid=\(Constants.Keys.apiKey)"
         case .weatherByCoordinates(let lat, let lon):
-            return "onecall?lat=\(lat)&lon=\(lon)&units=metric&appid=\(Constants.apiKey)"
+            return "onecall?lat=\(lat)&lon=\(lon)&units=metric&appid=\(Constants.Keys.apiKey)"
         }
     }
 }

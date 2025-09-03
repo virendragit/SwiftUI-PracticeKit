@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SearchableSwiftUIView: View {
-    
+    //Test commit 
     @State private var searchText: String = ""
     @State private var friends: [String] = ["new","john","doe","alice","green"]
     

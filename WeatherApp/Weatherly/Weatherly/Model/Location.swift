@@ -13,6 +13,3 @@ struct Location  : Decodable{
     let lon: Double
 }
 
-struct Main  : Decodable{
- //new items can be added here 
-}

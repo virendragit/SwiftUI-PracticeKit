@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+struct WeatherResponse: Decodable {
+
+    
+    let name: Weather
+}
+
+
+struct Weather: Decodable {
+    let temp: Double
+}
+
+

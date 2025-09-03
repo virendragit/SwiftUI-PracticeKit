@@ -14,5 +14,5 @@ struct Location  : Decodable{
 }
 
 struct Main  : Decodable{
- 
+ //new items can be added here 
 }

@@ -92,4 +92,6 @@ Since you already have strong iOS depth, here’s how you could prepare in 6–8
 
 👉 Given your 13 years iOS experience + leadership background, the key is to show breadth (architecture, DevOps, cross-platform awareness) without losing depth (iOS expertise).
 
-Would you like me to draft a focused roadmap with learning resources (articles, courses, GitHub projects) for each of the sections (Core iOS, DevOps, Testing, Security, Cross-Platform), so you can follow a structured weekly plan?
+Would you like me to draft a focused roadmap with learning resources (articles, courses, GitHub projects) for each of the sections (Core iOS, DevOps, Testing, Security, Cross-Platform), so you can follow a structured weekly plan.
+
+TBA

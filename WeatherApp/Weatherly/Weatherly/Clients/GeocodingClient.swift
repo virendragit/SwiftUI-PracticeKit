@@ -12,6 +12,7 @@ enum NetworkError: Error {
     case decodingError
     case invalidURL
     case badURLResponse
+    case invalidResponse
 }
 
 struct GeocodingClient{

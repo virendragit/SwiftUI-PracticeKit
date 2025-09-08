@@ -10,14 +10,16 @@ import Foundation
 struct WeatherResponse: Decodable {
 
     
-    let name: Weather
+    let main: Weather
 }
 
 
 struct Weather: Decodable {
     let temp: Double
-//    let feelsLike: Double
+
     
 }
+
+
 
 

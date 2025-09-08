@@ -8,15 +8,15 @@
 import Foundation
 
 enum APIEndpoint {
-    static let baseURLString = "https://api.openweathermap.org/data/2.5/"
+    static let baseURLString = "https://api.openweathermap.org"
     
     case coordinatesByLocation(String)
     case weatherByCoordinates(Double, Double)
     
     private var path: String {
         switch self {
-        case .coordinatesByLocation(let location):
-            return "weather?q=\(location)&units=metric&appid=\(Constants.Keys.apiKey)"
+        case .coordinatesByLocation(let city):
+            return "/geo/1.0/direct?q=\(city)&appid=\(Constants.Keys.apiKey)"
         case .weatherByCoordinates(let lat, let lon):
             return "onecall?lat=\(lat)&lon=\(lon)&units=metric&appid=\(Constants.Keys.apiKey)"
         }

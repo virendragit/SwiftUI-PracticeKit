@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>agInspectUAT.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>75</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>A94E4B8B7897D5B18347B11760842AA8F39013DC</string>
+				<key>dateExpires</key>
+				<string>12/03/28</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>DV2A85LJJL.com.alliantgroup.aginspectUat</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>DV2A85LJJL</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>agInspect.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>3833d29f-c86f-471e-a657-dfe931e4da21</string>
+				<key>dateExpires</key>
+				<string>13/03/26</string>
+				<key>name</key>
+				<string>agInspectUATDist</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>DV2A85LJJL</string>
+				<key>name</key>
+				<string>alliantgroup, LP</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>21.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -13,8 +13,8 @@ struct ContentView: View {
             Button("Get Coordinates"){
                 Task {
                     let geoCodingClient = GeocodingClient()
-                    let location = try! await geoCodingClient.coordinateByCity("New York")
-                    print("\(location)")
+                    let location = try! await geoCodingClient.coordinateByCity("Dehli")
+                    print(location)
                     
                 }
             }

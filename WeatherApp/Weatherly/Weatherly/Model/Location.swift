@@ -13,3 +13,16 @@ struct Location  : Decodable{
     let lon: Double
 }
 
+//struct GeocodingResponse: Decodable {
+//    let results: [Location]
+//}
+//
+//struct Location: Decodable {
+//    let geometry: Geometry
+//    let formatted: String
+//}
+//
+//struct Geometry: Decodable {
+//    let lat: Double
+//    let lng: Double
+//}

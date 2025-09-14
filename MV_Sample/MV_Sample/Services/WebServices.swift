@@ -26,5 +26,9 @@ class WebServices {
         guard let httpResponse = response as? HTTPURLResponse else{
             throw NetworkError.badRequest
         }
+        
+        let products = try JSONDecoder().decode([Product].self, from: data)
+        
+        return products
     }
 }

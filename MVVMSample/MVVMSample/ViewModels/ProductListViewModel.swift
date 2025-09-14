@@ -30,7 +30,7 @@ class ProductListViewModel: ObservableObject {
 }
 
 
-struct ProductViewModel{
+struct ProductViewModel: Identifiable{
     
     private var product: Product
     
@@ -44,7 +44,7 @@ struct ProductViewModel{
     var title: String {
         product.title
     }
-    var price: String {
+    var price: Double {
         product.price
     }
 }

@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct WebServices{
+    
+    fun getProducts() -> [Product] {
+        return []
+    }
+}

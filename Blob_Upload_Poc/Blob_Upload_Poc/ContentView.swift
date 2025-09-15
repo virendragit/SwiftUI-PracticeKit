@@ -9,10 +9,18 @@ import SwiftUI
 import PhotosUI
 
 struct ContentView: View {
+    
+    @StateObject private var viewModel :ImageUploadViewModel
     @State private var selectedItems: [PhotosPickerItem] = []
     @State private var selectedImages: [Image] = []
 
     var body: some View {
+        
+        VStack(spacing: 20) {
+                    Button("Upload Image") {
+//                        viewModel.uploadImage(named: "yourImageName") // Replace with actual asset name
+                    }
+                }
         VStack {
             if selectedImages.isEmpty {
                 Image(systemName: "photo.on.rectangle.angled")
@@ -30,7 +38,7 @@ struct ContentView: View {
                             selectedImages[index]
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 150, height: 150)
+                                .frame(width: 100, height: 100)
                                 .cornerRadius(8)
                         }
                     }
@@ -40,14 +48,14 @@ struct ContentView: View {
             PhotosPicker(
                 "Select Images",
                 selection: $selectedItems,
-                maxSelectionCount: 5, // Optional: limit selection
+                maxSelectionCount: 5,
                 matching: .images
             )
             .buttonStyle(.borderedProminent)
             .padding()
         }
         .padding()
-        .onChange(of: selectedItems) { newItems in
+        .onChange(of: selectedItems) {_ ,newItems in
             Task {
                 selectedImages.removeAll()
                 for item in newItems {
@@ -60,43 +68,6 @@ struct ContentView: View {
         }
     }
 }
-
-
-//struct ContentView: View {
-//    
-//    @State private var selectedItem: PhotosPickerItem? = nil
-//    @State private var selectedImage: Image? = nil
-//    
-//    var body: some View {
-//            VStack {
-//                if let image = selectedImage {
-//                    image
-//                        .resizable()
-//                        .scaledToFit()
-//                        .frame(height: 200)
-//                } else {
-//                    Image(systemName: "globe")
-//                        .imageScale(.large)
-//                        .foregroundStyle(.tint)
-//                }
-//
-//                Text("Hello, world!")
-//
-//                PhotosPicker("Select Photo", selection: $selectedItem, matching: .images)
-//                    .buttonStyle(.borderedProminent)
-//                    .padding()
-//            }
-//            .padding()
-//            .onChange(of: selectedItem ?? <#default value#>) { newItem in
-//                Task {
-//                    if let data = try? await newItem.loadTransferable(type: Data.self),
-//                       let uiImage = UIImage(data: data) {
-//                        selectedImage = Image(uiImage: uiImage)
-//                    }
-//                }
-//            }
-//        }
-//}
 
 #Preview {
     ContentView()

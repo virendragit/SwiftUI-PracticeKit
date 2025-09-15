@@ -9,6 +9,14 @@ import SwiftUI
 
 @main
 struct Coffee_appApp: App {
+    
+    @StateObject private var model: CoffeeModel
+    
+    init(){
+        let webservice = Webservice()
+        _model = StateObject(wrappedValue: CoffeeModel(webservices: webservice))
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -16,7 +16,7 @@ struct LoginView2: View {
     
     @State private var email: String = ""
     @State private var password: String = ""
-    @State private var loginFormError: LoginFromError()
+    @State private var loginFormError: LoginFromError
     
     private func clearForm(){
         loginFormError = LoginFromError()
@@ -29,7 +29,7 @@ struct LoginView2: View {
         
         if email.isEmpty {
             loginFormError.email = "Email is required"
-        }else if !email.isValid {
+        }else if !email.isValidEmail {
             loginFormError.email = "Email is not in correct format"
         }
         
@@ -45,7 +45,7 @@ struct LoginView2: View {
             TextField("Email", text: $email)
                 .textInputAutocapitalization(.never)
             
-            if LoginFromError.email.isEmpty{
+            if LoginFromError.ema{
                 Text(loginFormError.email)
                     .font(.caption)
             }
